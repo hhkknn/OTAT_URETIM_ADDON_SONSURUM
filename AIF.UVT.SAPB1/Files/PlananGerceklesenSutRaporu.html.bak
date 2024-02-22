@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="background-color:ffffff;font-size:16px">
+   <head>
+    <title>SÜT PLAN RAPORU {Tarih8}</title>
+      <style>
+        table thead tr th {padding: 5px;}
+        table tbody tr td {padding: 5px;}
+        table tbody tr td:hover {background-color: red; color: white !important;}
+      </style>
+   <body>
+   
+     <div style="height: auto; min-height: 150px; margin: 10px auto; background-color: #e7e8e5; border: 5px solid #dbdcd9;">
+          <center>    
+            <table class="table table-striped" border="1" style="border: 1px solid #000; box-shadow: 3px 3px 3px 3px #666; border-radius: 5px;">
+                <thead>
+                  <tr style="background-color: orange; font-weight: bold; color: white; font-size:12px">
+                    <th scope="col">Tarih</th>
+                    <th scope="col" colspan="3">{Tarih1}</th>
+                    <th scope="col" colspan="3">{Tarih2}</th>
+                    <th scope="col" colspan="3">{Tarih3}</th>
+                    <th scope="col" colspan="3">{Tarih4}</th>
+                    <th scope="col" colspan="3">{Tarih5}</th>
+                    <th scope="col" colspan="3">{Tarih6}</th>
+                    <th scope="col" colspan="3">{Tarih7}</th>
+                    <th scope="col" colspan="3">TOPLAMLAR</th> 
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="font-weight: bold; font-size:12px">
+                    <td scope="row" style="color: red;"><center>TEDARIKCI</center></td>
+                    <td style="color: red; background-color: Moccasin;"><center><center>PLAN</center></center></td>
+                    <td style="color: red; background-color: PeachPuff;"><center><center>GER</center></center></td>
+                    <td style="color: red;"><center><center>G/P%</center></center></td>  
+					
+					<td style="color: red; background-color: Moccasin;"><center>PLAN</center></td>
+                    <td style="color: red; background-color: PeachPuff;"><center>GER</center></td>
+                    <td style="color: red;"><center>G/P%</center></td>   
+					
+					<td style="color: red; background-color: Moccasin;"><center>PLAN</center></td>
+                    <td style="color: red; background-color: PeachPuff;"><center>GER</center></td>
+                    <td style="color: red;"><center>G/P%</center></td>   
+					
+					<td style="color: red; background-color: Moccasin;"><center>PLAN</center></td>
+                    <td style="color: red; background-color: PeachPuff;"><center>GER</center></td>
+                    <td style="color: red;"><center>G/P%</center></td>  
+					
+					<td style="color: red; background-color: Moccasin;"><center>PLAN</center></td>
+                    <td style="color: red; background-color: PeachPuff;"><center>GER</center></td>
+                    <td style="color: red;"><center>G/P%</center></td>   
+					
+					<td style="color: red; background-color: Moccasin;"><center>PLAN</center></td>
+                    <td style="color: red; background-color: PeachPuff;"><center>GER</center></td>
+                    <td style="color: red;"><center>G/P%</center></td> 
+					
+					<td style="color: red; background-color: Moccasin;"><center>PLAN</center></td>
+                    <td style="color: red; background-color: PeachPuff;"><center>GER</center></td>
+                    <td style="color: red;"><center>G/P%</center></td>   
+					
+					<td style="color: red; background-color: Moccasin;"><center>PLAN</center></td>
+                    <td style="color: red; background-color: PeachPuff;"><center>GER</center></td>
+                    <td style="color: red;"><center>G/P%</center></td>  
+                  </tr> 
+				  
+				  
+				  
+                  <!-- <tr style="font-weight: bold;"> -->
+                    <!-- <td scope="row">MEHMET ÇUHADAR</td> -->
+                    <!-- <td>0.000</td> -->
+                    <!-- <td>0.000</td> -->
+                    <!-- <td>0.000</td>   -->
+					
+					<!-- <td>16650.000</td> -->
+                    <!-- <td>18522.000</td> -->
+                    <!-- <td>8.09</td>   -->
+					
+                    <!-- <td>0.000</td> -->
+                    <!-- <td>0.000</td> -->
+                    <!-- <td>0.000</td>   -->
+					
+					<!-- <td>16650.000</td> -->
+                    <!-- <td>16254.000</td> -->
+                    <!-- <td>9.22</td>   -->
+					
+                    <!-- <td>0.000</td> -->
+                    <!-- <td>0.000</td> -->
+                    <!-- <td>0.000</td>   -->
+					
+					<!-- <td>16650.000</td> -->
+                    <!-- <td>16776.000</td> -->
+                    <!-- <td>8.93</td>   -->
+					
+                    <!-- <td>0.000</td> -->
+                    <!-- <td>0.000</td> -->
+                    <!-- <td>0.000</td>   -->
+					
+					<!-- <td>49950.000</td> -->
+                    <!-- <td>51552.000</td> -->
+                    <!-- <td>0.97</td>   -->
+                  <!-- </tr>  -->
+				  
+				  {Satirlar}
+				  
+				  
+                </tbody>
+              </table> 
+            </center>
+        </div>
+   
+   
+   </body>
+   </head>
+  </html>

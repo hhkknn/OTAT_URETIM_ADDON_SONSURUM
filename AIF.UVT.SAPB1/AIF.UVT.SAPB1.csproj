@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D4923200-9632-4B7F-AD57-2A8759C1114F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AIF.UVT.SAPB1</RootNamespace>
+    <AssemblyName>AIF.UVT.SAPB1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AIF.UVT.SAPB1.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AIF.ObjectsDLL, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ObjectsDLL\AIF.ObjectsDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Files\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Files\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.17.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.17.1\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="FireSharp, Version=2.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FireSharp.2.0.4\lib\portable-net45+sl5+wp8+win8\FireSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop, Version=1.0.168.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SAPBusinessOneSDK, Version=1.0.0.1, Culture=neutral, PublicKeyToken=c7c3cb60e45d119f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\SAP\SAP Business One SDK\Lib\SAPBusinessOneSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Compile Include="ClassLayer\AIFConn.cs" />
+    <Compile Include="ClassLayer\KaliteDetayListesi.cs" />
+    <Compile Include="ClassLayer\AnalizGirisBolumler.cs" />
+    <Compile Include="ClassLayer\AnalizGirisNumune.cs" />
+    <Compile Include="ClassLayer\MIPMiktarDuzenlemeEkrani.cs" />
+    <Compile Include="ClassLayer\SAPSiparisTavsiye.cs" />
+    <Compile Include="ClassLayer\SiparisTavsiyeParametre.cs" />
+    <Compile Include="ClassLayer\SutPlananGerceklesenRaporu.cs" />
+    <Compile Include="ClassLayer\GenelParametreler.cs" />
+    <Compile Include="ClassLayer\AnalizGirisSecim.cs" />
+    <Compile Include="ClassLayer\DolapTayin.cs" />
+    <Compile Include="ClassLayer\GirdiKontrolFormu.cs" />
+    <Compile Include="ClassLayer\IadeGrupNedeni.cs" />
+    <Compile Include="ClassLayer\IadeGrubu.cs" />
+    <Compile Include="ClassLayer\MikrobiyolojikAnalizEkrani.cs" />
+    <Compile Include="ClassLayer\MusteriSikayetNedeni.cs" />
+    <Compile Include="ClassLayer\MusteriSikayetGrubu.cs" />
+    <Compile Include="ClassLayer\MusteriSikayetleri.cs" />
+    <Compile Include="ClassLayer\PartiliUretimRaporu.cs" />
+    <Compile Include="ClassLayer\PartiliUretimRaporuSecim.cs" />
+    <Compile Include="ClassLayer\SAPDuranVarlik.cs" />
+    <Compile Include="ClassLayer\SAPIade.cs" />
+    <Compile Include="ClassLayer\SAPSatinalmaSiparisliMalGirisi.cs" />
+    <Compile Include="ClassLayer\UretimSiparisCogalt.cs" />
+    <Compile Include="ClassLayer\UrunIadeSecim.cs" />
+    <Compile Include="ClassLayer\UygunsuzUrunler.cs" />
+    <Compile Include="ClassLayer\YonetimEkrani.cs" />
+    <Compile Include="ClassLayer\AktiviteParametre.cs" />
+    <Compile Include="ClassLayer\AletEkipmanTemizlik.cs" />
+    <Compile Include="ClassLayer\AnalizGiris.cs" />
+    <Compile Include="ClassLayer\AnalizParametre.cs" />
+    <Compile Include="ClassLayer\AnalizveriParametreleri.cs" />
+    <Compile Include="ClassLayer\AyranAnalizTakibi.cs" />
+    <Compile Include="ClassLayer\Bolumler.cs" />
+    <Compile Include="ClassLayer\ChooseFromList.cs" />
+    <Compile Include="ClassLayer\CIPTemizlik1.cs" />
+    <Compile Include="ClassLayer\CIPTemizlik2.cs" />
+    <Compile Include="ClassLayer\CommarchVarsayilanlari.cs" />
+    <Compile Include="ClassLayer\GunlukPersonelPlanlama.cs" />
+    <Compile Include="ClassLayer\GunlukPersonelPlanlama2.cs" />
+    <Compile Include="ClassLayer\GunlukPersonelPlanlama3.cs" />
+    <Compile Include="ClassLayer\GunlukSutRaporu.cs" />
+    <Compile Include="ClassLayer\HaftalikPlan.cs" />
+    <Compile Include="ClassLayer\IndirimGiris.cs" />
+    <Compile Include="ClassLayer\IndirimSablonlari.cs" />
+    <Compile Include="ClassLayer\IndirimSihirbazi.cs" />
+    <Compile Include="ClassLayer\IndirimUrunEkle.cs" />
+    <Compile Include="ClassLayer\KaynakPlanlama.cs" />
+    <Compile Include="ClassLayer\MuhatapOzelFiyat.cs" />
+    <Compile Include="ClassLayer\OperasyonPlani.cs" />
+    <Compile Include="ClassLayer\Ornek.cs" />
+    <Compile Include="ClassLayer\OzelFiyatlarOlcut.cs" />
+    <Compile Include="ClassLayer\Reports.cs" />
+    <Compile Include="ClassLayer\SatinalmaIskontoGiris.cs" />
+    <Compile Include="ClassLayer\SatinalmaIskontoUrunEkle.cs" />
+    <Compile Include="ClassLayer\SatinalmaSiparisi.cs" />
+    <Compile Include="ClassLayer\SatisSiparisi.cs" />
+    <Compile Include="ClassLayer\SiparisOnaylama.cs" />
+    <Compile Include="ClassLayer\SirketBilgileri.cs" />
+    <Compile Include="ClassLayer\SutAntibiyotikCeza.cs" />
+    <Compile Include="ClassLayer\SutBrixCeza.cs" />
+    <Compile Include="ClassLayer\SutBrixPrim.cs" />
+    <Compile Include="ClassLayer\SutDepoSecim.cs" />
+    <Compile Include="ClassLayer\SutIyilestirme.cs" />
+    <Compile Include="ClassLayer\SutKabul.cs" />
+    <Compile Include="ClassLayer\SutKabulIyilestirme.cs" />
+    <Compile Include="ClassLayer\SutKabulUyarlama.cs" />
+    <Compile Include="ClassLayer\SutPhCeza.cs" />
+    <Compile Include="ClassLayer\SutPlanlama.cs" />
+    <Compile Include="ClassLayer\SutSodaCeza.cs" />
+    <Compile Include="ClassLayer\SutTankAnalizGiris.cs" />
+    <Compile Include="ClassLayer\SutTemizlikCeza.cs" />
+    <Compile Include="ClassLayer\SutYagCeza.cs" />
+    <Compile Include="ClassLayer\SutYagPrim.cs" />
+    <Compile Include="ClassLayer\TelemeAnaliz.cs" />
+    <Compile Include="ClassLayer\TreeView.cs" />
+    <Compile Include="ClassLayer\UretimSiparisi.cs" />
+    <Compile Include="ClassLayer\UretimSiparisiIptal.cs" />
+    <Compile Include="ClassLayer\UretimSiparisiOlusturma.cs" />
+    <Compile Include="ClassLayer\UretimSiparisNoSecim.cs" />
+    <Compile Include="ClassLayer\UretimSiparisPartiUretme.cs" />
+    <Compile Include="DatabaseLayer\Connection.cs" />
+    <Compile Include="DatabaseLayer\CreateTables.cs" />
+    <Compile Include="Files\Report2.cs" />
+    <Compile Include="Files\Report2_test.cs" />
+    <Compile Include="HelperClass\AddDiscountDetails.cs" />
+    <Compile Include="HelperClass\AttachmentCreate.cs" />
+    <Compile Include="HelperClass\DosyaSec.cs" />
+    <Compile Include="HelperClass\OpenFileDialog.cs" />
+    <Compile Include="HelperClass\parseNumber_Seperator.cs" />
+    <Compile Include="HelperClass\parseNumber.cs" />
+    <Compile Include="Models\InventoryGenExist.cs" />
+    <Compile Include="Models\InventoryGenEntry.cs" />
+    <Compile Include="Models\Response.cs" />
+    <Compile Include="Models\PurchaseOrder.cs" />
+    <Compile Include="Models\ProductionOrder.cs" />
+    <Compile Include="Models\AnalizBilgileri.cs" />
+    <Compile Include="Models\AnalizPartiler.cs" />
+    <Compile Include="Models\AracTankVerileri.cs" />
+    <Compile Include="Models\FiyatListesi.cs" />
+    <Compile Include="Models\GirdiKontrolParametre.cs" />
+    <Compile Include="Models\PartiliUretim.cs" />
+    <Compile Include="Models\SatinalmaIskontoluUrunEkle.cs" />
+    <Compile Include="Models\SerDurumu.cs" />
+    <Compile Include="Models\SutKabulUyarlama.cs" />
+    <Compile Include="Models\UrunEkle.cs" />
+    <Compile Include="Models\UrunIadeParametre.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Menu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Files\PDF\689.pdf" />
+    <None Include="Files\PDF\YemCiktisi.rpt" />
+    <None Include="Files\PDF\YemCiktisi_old.rpt" />
+    <None Include="Files\Report2.rpt" />
+    <None Include="Files\Report2_test.rpt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormsView\AktiviteParametreGiris.xml" />
+    <EmbeddedResource Include="FormsView\AletEkipmanTemizlik.xml" />
+    <EmbeddedResource Include="FormsView\AnalizGiris.xml" />
+    <EmbeddedResource Include="FormsView\AnalizParametreGiris.xml" />
+    <EmbeddedResource Include="FormsView\AyranAnalizTakibi.xml" />
+    <EmbeddedResource Include="FormsView\Bolumler.xml" />
+    <EmbeddedResource Include="FormsView\CIPTemizlik1.xml" />
+    <EmbeddedResource Include="FormsView\CIPTemizlik2.xml" />
+    <EmbeddedResource Include="FormsView\GunlukPersonelPlanlama.xml" />
+    <EmbeddedResource Include="FormsView\GunlukPersonelPlanlama2.xml" />
+    <EmbeddedResource Include="FormsView\GunlukPersonelPlanlama3.xml" />
+    <EmbeddedResource Include="FormsView\GunlukSutRaporu.xml" />
+    <EmbeddedResource Include="FormsView\HaftalikPlanlama.xml" />
+    <EmbeddedResource Include="FormsView\IndirimSablonlari.xml" />
+    <EmbeddedResource Include="FormsView\IndirimSihirbazi.xml" />
+    <EmbeddedResource Include="FormsView\KaynakPlanlama.xml" />
+    <EmbeddedResource Include="FormsView\Menu_010OTATURVT.xml" />
+    <EmbeddedResource Include="FormsView\OperasyonPlani.xml" />
+    <EmbeddedResource Include="FormsView\OrnekFrm.xml" />
+    <EmbeddedResource Include="FormsView\OzelFiyatlarSecim.xml" />
+    <EmbeddedResource Include="FormsView\Reports.xml" />
+    <EmbeddedResource Include="FormsView\SatisSiparisi.xml" />
+    <EmbeddedResource Include="FormsView\SiparisOnaylama.xml" />
+    <EmbeddedResource Include="FormsView\SutAntibiyotikCeza.xml" />
+    <EmbeddedResource Include="FormsView\SutBrixCeza.xml" />
+    <EmbeddedResource Include="FormsView\SutBrixPrim.xml" />
+    <EmbeddedResource Include="FormsView\SutDepoSecim.xml" />
+    <EmbeddedResource Include="FormsView\SutIyilestirme.xml" />
+    <EmbeddedResource Include="FormsView\SutKabul.xml" />
+    <EmbeddedResource Include="FormsView\SutKabulIyilestirme.xml" />
+    <EmbeddedResource Include="FormsView\SutKabulUyarlama.xml" />
+    <EmbeddedResource Include="FormsView\SutPhCeza.xml" />
+    <EmbeddedResource Include="FormsView\SutPlanlama.xml" />
+    <EmbeddedResource Include="FormsView\SutSoda.xml" />
+    <EmbeddedResource Include="FormsView\SutTankAnalizGiris.xml" />
+    <EmbeddedResource Include="FormsView\SutTemizlikCeza.xml" />
+    <EmbeddedResource Include="FormsView\SutYagCeza.xml" />
+    <EmbeddedResource Include="FormsView\SutYagPrim.xml" />
+    <EmbeddedResource Include="FormsView\TelemeAnalizTakip.xml" />
+    <EmbeddedResource Include="FormsView\TreeViewTest.xml" />
+    <EmbeddedResource Include="FormsView\UretimSiparisi.xml" />
+    <EmbeddedResource Include="FormsView\UretimSiparisiIptal.xml" />
+    <EmbeddedResource Include="FormsView\UretimSiparisiOlusturma.xml" />
+    <EmbeddedResource Include="FormsView\UretimSiparisNoSecim.xml" />
+    <EmbeddedResource Include="FormsView\UretimSiparisPartiUretme.xml" />
+    <EmbeddedResource Include="FormsView\SirketBilgileri.xml" />
+    <EmbeddedResource Include="FormsView\AnalizveriParametreleri.xml" />
+    <EmbeddedResource Include="FormsView\CommarchVarsayilanlari.xml" />
+    <EmbeddedResource Include="FormsView\IndirimGirisEkrani.xml" />
+    <EmbeddedResource Include="FormsView\IndirimUrunEkle.xml" />
+    <EmbeddedResource Include="FormsView\SatinalmaIskontoGiris.xml" />
+    <EmbeddedResource Include="FormsView\SatinalmaIskontoluUrunEkle.xml" />
+    <EmbeddedResource Include="FormsView\SatinalmaSiparisi_Otat.xml" />
+    <Content Include="Files\CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="Files\CrystalDecisions.Shared.dll" />
+    <EmbeddedResource Include="FormsView\Menu_20URVT.xml" />
+    <EmbeddedResource Include="FormsView\YonetimEkrani.xml" />
+    <EmbeddedResource Include="FormsView\SatinalmaSiparisi_Yoruk.xml" />
+    <Content Include="Files\PDF\mail.html" />
+    <EmbeddedResource Include="FormsView\MenuSirket.xml" />
+    <EmbeddedResource Include="FormsView\AnalizGirisSecim.xml" />
+    <EmbeddedResource Include="FormsView\DolapTayin.xml" />
+    <EmbeddedResource Include="FormsView\GirdiKontrolFormu.xml" />
+    <EmbeddedResource Include="FormsView\MusteriSikayetleri.xml" />
+    <EmbeddedResource Include="FormsView\PartiliUretimRaporu.xml" />
+    <EmbeddedResource Include="FormsView\PartiliUretimRaporuSecim.xml" />
+    <EmbeddedResource Include="FormsView\SAPDuranVarlik.xml" />
+    <EmbeddedResource Include="FormsView\SAPIade.xml" />
+    <EmbeddedResource Include="FormsView\SAPSatinalmaSiparisliMalGirisi.xml" />
+    <EmbeddedResource Include="FormsView\SatinalmaSiparisi.xml" />
+    <EmbeddedResource Include="FormsView\UrunIadeSecim.xml" />
+    <EmbeddedResource Include="FormsView\UygunsuzUrunler.xml" />
+    <EmbeddedResource Include="FormsView\GenelParametreler.xml" />
+    <EmbeddedResource Include="FormsView\UretimSiparisCogalt.xml" />
+    <EmbeddedResource Include="FormsView\AnalizGirisBolumler.xml" />
+    <EmbeddedResource Include="FormsView\AnalizGirisNumune.xml" />
+    <EmbeddedResource Include="FormsView\IadeGrubu.xml" />
+    <EmbeddedResource Include="FormsView\IadeGrupNedeni.xml" />
+    <EmbeddedResource Include="FormsView\MusteriSikayetGrubu.xml" />
+    <EmbeddedResource Include="FormsView\MusteriSikayetNedeni.xml" />
+    <EmbeddedResource Include="FormsView\MikrobiyolojikAnalizEkrani.xml" />
+    <EmbeddedResource Include="FormsView\SutPlanlananGerceklesenRaporu.xml" />
+    <EmbeddedResource Include="FormsView\KaliteDetayListesi.xml" />
+    <EmbeddedResource Include="FormsView\SiparisTavsiyeParametre.xml" />
+    <EmbeddedResource Include="FormsView\SAPSiparisTavsiye.xml" />
+    <EmbeddedResource Include="FormsView\MIPMiktarDuzenlemeEkrani.xml" />
+    <Content Include="Images\logo.jpeg" />
+    <Content Include="ObjectsDLL\AIF.ObjectsDLL.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
