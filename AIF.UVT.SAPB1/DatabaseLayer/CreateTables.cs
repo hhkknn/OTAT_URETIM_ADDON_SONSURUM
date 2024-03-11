@@ -5802,8 +5802,9 @@ namespace AIF.UVT.SAPB1.DataTables
                         TableCreation.CreateUserFields("@AIF_MKRBYLJK1", "YuzeyKuf", "Yüzey Küf", SAPbobsCOM.BoFieldTypes.db_Alpha, 50, SAPbobsCOM.BoFldSubTypes.st_None);
                         TableCreation.CreateUserFields("@AIF_MKRBYLJK1", "AnlzYapanKodu", "Analiz Yapan", SAPbobsCOM.BoFieldTypes.db_Alpha, 10, SAPbobsCOM.BoFldSubTypes.st_None);
                         TableCreation.CreateUserFields("@AIF_MKRBYLJK1", "AnlzYapanAdi", "Analiz Yapan Adı", SAPbobsCOM.BoFieldTypes.db_Alpha, 250, SAPbobsCOM.BoFldSubTypes.st_None);
+                        TableCreation.CreateUserFields("@AIF_MKRBYLJK1", "ToplamCanli", "Toplam Canlı", SAPbobsCOM.BoFieldTypes.db_Alpha, 50, SAPbobsCOM.BoFldSubTypes.st_None);
                     }
-
+                    TableCreation.CreateUserFields("@AIF_MKRBYLJK1", "ToplamCanli", "Toplam Canlı", SAPbobsCOM.BoFieldTypes.db_Alpha, 50, SAPbobsCOM.BoFldSubTypes.st_None);
                     if (!UdoCreation.UDOExists("AIF_MKRBYLJK"))
                     {
                         fields.Clear();
@@ -5835,6 +5836,7 @@ namespace AIF.UVT.SAPB1.DataTables
                         fc.Add(new FormColumn { FormColumnAlias = "U_YuzeyKuf", FormColumnDescription = "Yüzey Küf", Editable = SAPbobsCOM.BoYesNoEnum.tYES });
                         fc.Add(new FormColumn { FormColumnAlias = "U_AnlzYapanKodu", FormColumnDescription = "Analiz Yapan", Editable = SAPbobsCOM.BoYesNoEnum.tYES });
                         fc.Add(new FormColumn { FormColumnAlias = "U_AnlzYapanAdi", FormColumnDescription = "Analiz Yapan Adı", Editable = SAPbobsCOM.BoYesNoEnum.tYES });
+                        fc.Add(new FormColumn { FormColumnAlias = "U_ToplamCanli", FormColumnDescription = "Toplam Canlı", Editable = SAPbobsCOM.BoYesNoEnum.tYES });
 
                         ch.FormColumn = fc;
                         chList.Add(ch);

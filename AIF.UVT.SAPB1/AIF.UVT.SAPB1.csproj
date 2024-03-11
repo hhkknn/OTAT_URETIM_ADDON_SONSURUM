@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AIF.UVT.SAPB1</RootNamespace>
     <AssemblyName>AIF.UVT.SAPB1</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
@@ -288,7 +288,6 @@
     <EmbeddedResource Include="FormsView\SutKabulIyilestirme.xml" />
     <EmbeddedResource Include="FormsView\SutKabulUyarlama.xml" />
     <EmbeddedResource Include="FormsView\SutPhCeza.xml" />
-    <EmbeddedResource Include="FormsView\SutPlanlama.xml" />
     <EmbeddedResource Include="FormsView\SutSoda.xml" />
     <EmbeddedResource Include="FormsView\SutTankAnalizGiris.xml" />
     <EmbeddedResource Include="FormsView\SutTemizlikCeza.xml" />
@@ -342,6 +341,7 @@
     <EmbeddedResource Include="FormsView\SiparisTavsiyeParametre.xml" />
     <EmbeddedResource Include="FormsView\SAPSiparisTavsiye.xml" />
     <EmbeddedResource Include="FormsView\MIPMiktarDuzenlemeEkrani.xml" />
+    <EmbeddedResource Include="FormsView\SutPlanlama.xml" />
     <Content Include="Images\logo.jpeg" />
     <Content Include="ObjectsDLL\AIF.ObjectsDLL.dll" />
   </ItemGroup>

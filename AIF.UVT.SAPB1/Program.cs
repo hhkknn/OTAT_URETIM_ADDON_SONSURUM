@@ -44,30 +44,30 @@ namespace AIF.UVT.SAPB1
                     System.Environment.Exit(0);
                 }
 
-                //try
-                //{
-                //    XmlDocument XmlDoc = null;
+                try
+                {
+                    XmlDocument XmlDoc = null;
 
-                //    mKod = System.Configuration.ConfigurationManager.AppSettings["MusteriKodu"];
-                //    if (mKod == "010OTATURVT")
-                //    {
-                //        XmlDoc = ConstVariables.oFnc.getXMLDocument(Assembly.GetExecutingAssembly().GetManifestResourceStream("AIF.UVT.SAPB1.FormsView.Menu.xml"));
-                //    }
-                //    else if (mKod == "20URVT")
-                //    {
-                //        XmlDoc = ConstVariables.oFnc.getXMLDocument(Assembly.GetExecutingAssembly().GetManifestResourceStream("AIF.UVT.SAPB1.FormsView.Menu2.xml"));
-                //    }
+                    mKod = System.Configuration.ConfigurationManager.AppSettings["MusteriKodu"];
+                    if (mKod == "010OTATURVT")
+                    {
+                        XmlDoc = ConstVariables.oFnc.getXMLDocument(Assembly.GetExecutingAssembly().GetManifestResourceStream("AIF.UVT.SAPB1.FormsView.Menu.xml"));
+                    }
+                    else if (mKod == "20URVT")
+                    {
+                        XmlDoc = ConstVariables.oFnc.getXMLDocument(Assembly.GetExecutingAssembly().GetManifestResourceStream("AIF.UVT.SAPB1.FormsView.Menu2.xml"));
+                    }
 
-                //    ConstVariables.oFnc.XmlMenuImport(XmlDoc);
-                //    Handler.SAPApplication.LoadBatchActions(XmlDoc.InnerXml);
+                    ConstVariables.oFnc.XmlMenuImport(XmlDoc);
+                    Handler.SAPApplication.LoadBatchActions(XmlDoc.InnerXml);
 
-                //    //Handler.SAPApplication.Menus.RemoveEx("");
-                //}
-                //catch (Exception ex)
-                //{
-                //    System.Windows.Forms.MessageBox.Show(ex.ToString() + Environment.NewLine + "ExitThread");
-                //    System.Windows.Forms.Application.ExitThread();
-                //}
+                    //Handler.SAPApplication.Menus.RemoveEx("");
+                }
+                catch (Exception ex)
+                {
+                    System.Windows.Forms.MessageBox.Show(ex.ToString() + Environment.NewLine + "ExitThread");
+                    System.Windows.Forms.Application.ExitThread();
+                }
 
                 #region CONSTRNG TABLOSU - ŞİRKET BİLGİLERİ - SİSTEMDE İLK KURULACAK VE DOLDURULACAK TABLODUR.MÜŞTERİ KODU ALANI BOŞ OLURSA ALAN VE TABLO AÇILMAZ.
                 try

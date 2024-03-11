@@ -862,6 +862,7 @@ namespace AIF.UVT.SAPB1.ClassLayer
                         try
                         {
                             val = oDataTable.GetValue("ItemName", 0).ToString();
+                            ((SAPbouiCOM.EditText)oMatrixDetay.Columns.Item("Col_7").Cells.Item(pVal.Row).Specific).Value = val;
                         }
                         catch (Exception)
                         {
@@ -870,7 +871,7 @@ namespace AIF.UVT.SAPB1.ClassLayer
                         try
                         {
                             //oEditUrunAdi.Value = val;
-                            ((SAPbouiCOM.EditText)oMatrixDetay.Columns.Item("Col_7").Cells.Item(pVal.Row).Specific).Value = val;
+                            //((SAPbouiCOM.EditText)oMatrixDetay.Columns.Item("Col_7").Cells.Item(pVal.Row).Specific).Value = val;
                         }
                         catch (Exception)
                         {
